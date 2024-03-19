@@ -1,0 +1,10 @@
+nano .env
+
+mkdir -p $HOME/.eigenlayer/eigenda/logs
+mkdir -p $HOME/.eigenlayer/eigenda/db
+
+./run.sh opt-in
+
+docker compose up -d
+sd
+docker compose logs -f
